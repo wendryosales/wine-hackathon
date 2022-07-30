@@ -1,2 +1,3 @@
-export const USER_LOGIN = 'USER_LOGIN';
-export const USER_LOGOUT = 'USER_LOGOUT';
+export const FETCH_WINES = 'FETCH_WINES';
+export const RESQUEST_WINES = 'RESQUEST_WINES';
+export const RECEIVE_WINES = 'RECEIVE_WINES';
