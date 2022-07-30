@@ -2,9 +2,9 @@ import BASE_URL from '../base-url';
 import { RECEIVE_WINES, RESQUEST_WINES } from '../types';
 
 const requestWines = () => ({ type: RESQUEST_WINES });
-const receiveWines = (wines) => ({
+const receiveWines = (listWines) => ({
   type: RECEIVE_WINES,
-  wines,
+  listWines,
 });
 
 export default function fetchHosts() {
@@ -12,7 +12,7 @@ export default function fetchHosts() {
   return async (dispatch) => {
     dispatch(requestWines());
     const response = await fetch(URL, { method: 'get' });
-    const wines = await response.json();
-    return dispatch(receiveWines(wines));
+    const listWines = await response.json();
+    return dispatch(receiveWines(listWines.items));
   };
 }

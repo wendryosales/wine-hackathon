@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-// import nomeReducer1 from './nomeReducer1';
+import wines from './wines-reducer';
 
 const rootReducer = combineReducers({
-  // nomeReducer1,
+  wines,
 });
 
 export default rootReducer;
