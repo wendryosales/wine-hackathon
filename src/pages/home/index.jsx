@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import Banner from '../../components/banner';
 import fetchWines from '../../redux/actions';
 import Header from '../../components/header';
 
@@ -14,12 +15,12 @@ function Home() {
   }, []);
 
   return (
-    <div className="Home">
+    <div className="home">
       <Header />
-      <main>
-        <h1>banner/carousel aqui</h1>
+      <div className="main">
+        <Banner />
         <h2>lista de vinhos aqui</h2>
-      </main>
+      </div>
       <footer>footer aqui</footer>
     </div>
   );
