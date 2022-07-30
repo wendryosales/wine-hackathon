@@ -7,7 +7,7 @@ const receiveWines = (listWines) => ({
   listWines,
 });
 
-export default function fetchHosts() {
+export default function fetchWines() {
   const URL = `${BASE_URL}/products`;
   return async (dispatch) => {
     dispatch(requestWines());
