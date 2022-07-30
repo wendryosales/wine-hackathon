@@ -1,3 +1,9 @@
+.header-container {
+  margin-top: 4rem;
+  height: 30vh;
+  color: #f2f2f2;
+}
+
 .page-header {
   width: 100vw;
   background-color: var(--header-bg);
@@ -11,21 +17,25 @@
   height: 100%;
 
   display: grid;
-  grid-template-rows: 2fr 2fr 1fr;
-  grid-template-columns: 2fr 5fr 1fr 1fr;
+  grid-template-rows: 50% 30% 20%;
+  grid-template-columns: 25% 50% 12.5% 12.5%;
 
   align-items: center;
   justify-items: center;
 }
 
 .page-header .wine-logo {
-  height: 75%;
+  height: 3rem;
   align-self: end;
+}
+
+.page-header .wine-logo svg {
+  color: #f2f2f2;
 }
 
 .page-header .profile-image {
   min-height: 0;
-  height: 80%;
+  height: 3rem;
   grid-column: 4;
 }
 
@@ -43,7 +53,7 @@
   flex-direction: column;
   align-items: center;
 
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 700;
   padding: 0;
 }
@@ -88,8 +98,8 @@
 .page-header .links > .active::after {
   position: absolute;
   content: "";
-  border: 3px solid black;
-  bottom: -10px;
+  border: 3px solid var(--header-accent);
+  bottom: -5px;
   left: 50%;
   right: 50%;
   border-radius: 50%;

@@ -41,6 +41,7 @@
 
 .home {
   display: flex !important;
+  background-color: white;
   flex-direction: column;
   align-items: center !important;
   justify-content: center !important;

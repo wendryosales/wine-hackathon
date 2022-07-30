@@ -1,8 +1,8 @@
 /* css global e variavéis de cores */
 
 :root {
-  --header-bg: #C81A78;
-  --header-accent: #85D737;
+  --header-bg: #8200bd;
+  --header-accent: #F26649;
 
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -11,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --bg-dark: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
