@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 90% !important;
+  margin-top: 1rem;
 }
 
 .banner-container {
@@ -10,8 +11,4 @@
 
 .banner-image, .banner-image img {
   width: 100% !important;
-}
-
-.slick-dots button::before {
-  color: white !important;
 }
