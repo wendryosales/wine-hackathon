@@ -1,6 +1,9 @@
 /* css global e variavéis de cores */
 
 :root {
+  --header-bg: #C81A78;
+  --header-accent: #85D737;
+
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -17,6 +20,17 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#root {
+  max-width: 100vw !important;
+  height: auto !important;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -27,11 +41,12 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0 !important;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  padding: 0 !important;
 }
 
 h1 {
