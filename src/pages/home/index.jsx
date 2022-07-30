@@ -14,7 +14,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="Home">
+    <div className="home">
       <header>header aqui</header>
       <main>
         <Banner />
