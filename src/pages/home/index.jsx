@@ -1,6 +1,10 @@
+// react
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+// redux
 import fetchWines from '../../redux/actions';
+// components
+import WinesList from '../../components/button/carouselWines';
 
 function Home() {
   const dispatch = useDispatch();
@@ -17,7 +21,7 @@ function Home() {
       <header>header aqui</header>
       <main>
         <h1>banner/carousel aqui</h1>
-        <h2>lista de vinhos aqui</h2>
+        <WinesList/>
       </main>
       <footer>footer aqui</footer>
     </div>
