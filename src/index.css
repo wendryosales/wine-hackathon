@@ -1,6 +1,9 @@
 /* css global e variavéis de cores */
 
 :root {
+  --header-bg: #C81A78;
+  --header-accent: #85D737;
+
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
