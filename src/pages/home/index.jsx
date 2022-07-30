@@ -16,10 +16,10 @@ function Home() {
   return (
     <div className="home">
       <header>header aqui</header>
-      <main>
+      <div className="main">
         <Banner />
         <h2>lista de vinhos aqui</h2>
-      </main>
+      </div>
       <footer>footer aqui</footer>
     </div>
   );
