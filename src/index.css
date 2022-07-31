@@ -41,6 +41,7 @@ a:hover {
 }
 
 body {
+  height: max-content;
   margin: 0 !important;
   display: flex;
   place-items: center;
