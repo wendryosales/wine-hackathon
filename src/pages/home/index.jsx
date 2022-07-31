@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import Banner from '../../components/banner';
 import fetchWines from '../../redux/actions';
 import Header from '../../components/header';
+import Footer from '../../components/footer';
 
 function Home() {
   const dispatch = useDispatch();
@@ -21,7 +22,7 @@ function Home() {
         <Banner />
         <h2>lista de vinhos aqui</h2>
       </div>
-      <footer>footer aqui</footer>
+      <footer><Footer /></footer>
     </div>
   );
 }
