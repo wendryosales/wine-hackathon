@@ -1,4 +1,5 @@
 // third imports
+import { useState } from 'react';
 import { GiCellarBarrels } from 'react-icons/gi';
 import { Grid, Image } from 'semantic-ui-react';
 
@@ -10,7 +11,11 @@ import SearchBar from '../searchBar';
 // local css
 import './header.css';
 
+
 function Header() {
+  const menus = ["Clube", "Loja", "Produtores", "Ofertas", "Eventos"];
+  const [active, setActive] = useState(menus[0]);
+
   return (
     <div className="header-container">
       <div className="page-header">
@@ -30,11 +35,9 @@ function Header() {
             <p className="amount">5</p>
           </section>
           <ul className="links">
-            <li className="active">Clube</li>
-            <li>Loja</li>
-            <li>Produtores</li>
-            <li>Ofertas</li>
-            <li>Eventos</li>
+           {menus.map((item) => (
+           <li className={item===active && "active"} onClick={() => setActive(item)} >{item}</li>
+           ))}
           </ul>
         </Grid>
       </div>

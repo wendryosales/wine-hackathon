@@ -104,6 +104,10 @@
   border-radius: 50%;
 }
 
+.page-header .links > :hover {
+  color: var(--header-accent);
+}
+
 /* Semantic UI */
 .huge {
   width: 90%;
