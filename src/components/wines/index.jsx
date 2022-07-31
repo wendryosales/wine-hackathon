@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import Slider from 'react-slick';
+import Card from './cards/card';
 import './style.css';
-import Wines from './carouselWines';
 
 export default function WinesList() {
   const winesList = useSelector(({ wines }) => wines);
@@ -10,19 +10,19 @@ export default function WinesList() {
     dots: true,
     className: 'center',
     centerMode: false,
-    infinite: false,
-    centerPadding: '10%',
-    slidesToShow: 3,
+    infinite: true,
+    centerPadding: '0px',
+    slidesToShow: 4,
     speed: 500,
-    rows: 2,
-    slidesPerRow: 1,
+    rows: 1,
+    slidesPerRow: 2,
   };
   return (
     <div className="wines-container">
       <Slider {...settings}>
         {
               winesList.map((wine) => (
-                <Wines key={wine.id} wine={wine} />
+                <Card key={`${wine.name}${wine.id}`} wine={wine} />
               ))
             }
       </Slider>

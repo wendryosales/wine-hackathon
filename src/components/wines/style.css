@@ -1,22 +1,9 @@
 .wines-container {
-    width: 100%;
+  width: 100%;
 }
-  
-  .wine-container {
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    margin: 100px;
-  }
 
-  .wine-container img {
-    width: 100px;
-  }
-  
-  .wine-avaliation {
-    display: flex;
-  }
 
-  .wine-prices {
-    width: 30px;
-  }
+.center {
+  padding: 4rem;
+  padding-top: 10rem;
+}
