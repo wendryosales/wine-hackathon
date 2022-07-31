@@ -20,8 +20,6 @@ function Home() {
       <Header />
       <div className="main">
         <Banner />
-      </div>
-      <div className="wines">
         <WinesList />
       </div>
       <footer>footer aqui</footer>

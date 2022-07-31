@@ -1,18 +1,20 @@
-.wineList {
-    display: flex;
-    width: 100.em;
-  }
+.wines-container {
+    width: 100%;
+}
   
-  /* .wine-container{
-    width: 200px;
-  } */
+  .wine-container {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 100px;
+  }
 
   .wine-container img {
-    width: 50px;
+    width: 100px;
   }
   
   .wine-avaliation {
-    width: 30px;
+    display: flex;
   }
 
   .wine-prices {

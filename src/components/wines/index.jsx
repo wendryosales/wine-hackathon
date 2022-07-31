@@ -1,47 +1,30 @@
 import { useSelector } from 'react-redux';
 import Slider from 'react-slick';
 import './style.css';
+import Wines from './carouselWines';
 
 export default function WinesList() {
   const winesList = useSelector(({ wines }) => wines);
 
   const settings = {
+    dots: true,
     className: 'center',
-    centerMode: true,
+    centerMode: false,
     infinite: false,
-    centerPadding: '60px',
-    slidesToShow: 7,
-    slidesToScroll: 7,
-    // speed: 5000,
-    rows: 5,
-    slidesPerRow: 5,
+    centerPadding: '10%',
+    slidesToShow: 3,
+    speed: 500,
+    rows: 2,
+    slidesPerRow: 1,
   };
   return (
-    <div>
+    <div className="wines-container">
       <Slider {...settings}>
-        <section className="winesList">
-          {
-              winesList.map(({
-                image, name, price, discount, priceMember,
-                priceNonMember, type, rating, avaliations,
-              }) => (
-                <div className="wine-container">
-                  <img src={image} alt={name} />
-                  <div className="wine-avaliation">
-                    <p>{ rating }</p>
-                    <p>{ avaliations }</p>
-                    <p>{ type }</p>
-                  </div>
-                  <div className="wine-prices">
-                    <p>{ price }</p>
-                    <p>{ discount }</p>
-                    <p>{ priceMember }</p>
-                    <p>{ priceNonMember }</p>
-                  </div>
-                </div>
+        {
+              winesList.map((wine) => (
+                <Wines key={wine.id} wine={wine} />
               ))
             }
-        </section>
       </Slider>
     </div>
   );
