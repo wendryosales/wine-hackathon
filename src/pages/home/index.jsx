@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import fetchWines from '../../redux/actions';
-import WinesList from '../../components/wines';
 import Banner from '../../components/banner';
-import Header from '../../components/header';
 import Footer from '../../components/footer';
+import Header from '../../components/header';
+import WinesList from '../../components/wines';
+import fetchWines from '../../redux/actions';
 
 function Home() {
   const dispatch = useDispatch();
@@ -23,7 +23,7 @@ function Home() {
         <Banner />
         <WinesList />
       </div>
-      <footer><Footer /></footer>
+      <Footer />
     </div>
   );
 }

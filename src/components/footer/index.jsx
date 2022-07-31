@@ -1,8 +1,3 @@
-import { useState } from 'react';
-// import { GiCellarBarrels } from 'react-icons/gi';
-import {
-  Grid, Image, Search,
-} from 'semantic-ui-react';
 import './footer.css';
 
 function Footer() {
@@ -31,8 +26,8 @@ function Footer() {
         <p className="footer-P">Favoritos</p>
         <p className="footer-P">Cupons</p>
         <p className="footer-P">Presentes</p>
-        </section>
-        <section className="footer-section">
+      </section>
+      <section className="footer-section">
         <h2 className="footer-h2">CONHEÇA TAMBÉM</h2>
         <p className="footer-P">Institucional</p>
         <p className="footer-P">Lojas Oficiais</p>
@@ -49,7 +44,6 @@ function Footer() {
         <p className="footer-P">Guilherme Cunha </p>
         <p className="footer-P">Imar Mendes</p>
       </section>
-      
     </div>
   );
 }
